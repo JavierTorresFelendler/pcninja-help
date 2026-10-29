@@ -125,3 +125,9 @@ a { color: inherit; }
   .nav a { padding: 4px 6px; font-size: 14px; }
   .downloads a { font-size: 19px; }
 }
+@media (max-width: 600px) {
+  .brand span { display: none; }
+  .nav { gap: 2px; }
+  .nav a { padding: 4px 6px; font-size: 13px; }
+  .nav .toggle { width: 22px; }
+}

@@ -28,7 +28,7 @@
       text-align: center;
       color: #fff;
     }
-    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.61); }
+    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(33, 33, 33, 0.7); }
     .hero-inner { position: relative; width: min(742px, 100%); }
     .hero-cta {
       font-family: Narkisim, "David", "Times New Roman", serif;
@@ -73,7 +73,9 @@
       background-position: center;
       background-repeat: no-repeat;
     }
-    .tool .btn { position: absolute; top: 50%; transform: translateY(-50%); }
+    .tool::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.55); }
+    .tool-ru::before { background: rgba(255, 255, 255, 0.57); }
+    .tool .btn { position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); }
     .tool-ru { background-color: #fff; background-image: url("/assets/remoteutilities.png"); }
     .tool-pv { background-color: #111; background-image: url("/assets/peerviewer.png"); }
     .tool-hd { background-color: #3a3a3a; background-image: url("/assets/hoptodesk.jpg"); }
@@ -87,7 +89,7 @@
     @media (max-width: 700px) {
       .hero-cta { font-size: 52px; }
       .tool { display: flex; align-items: center; justify-content: space-around; }
-      .tool .btn { position: static; transform: none; width: auto !important; }
+      .tool .btn { position: relative; top: auto; left: auto !important; transform: none; width: auto !important; }
     }
   </style>
 </head>
