@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="he">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Pc Ninja - צור קשר</title>
+  <meta name="description" content="טופס בקשת שירות - Help Pc Ninja">
+  <meta property="og:title" content="Help Pc Ninja - צור קשר">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://help.pcninja.pro/aboutMe/contact/">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    .form-wrap {
+      max-width: 1146px;
+      margin: 0 auto;
+      padding: calc(var(--header-h) + 24px) 16px 32px;
+    }
+    .form-wrap iframe { display: block; width: 100%; height: 1100px; border: 0; }
+    .form-fallback { text-align: center; padding-top: 12px; font-size: 14px; direction: rtl; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img src="/assets/logo.png" alt="" width="40" height="40">
+      <span>Help Pc Ninja</span>
+    </a>
+    <ul class="nav">
+      <li><a href="/">מחשבים - תמיכה מרחוק</a></li>
+      <li>
+        <a class="active" href="/aboutMe/">אודות השירות</a>
+        <button class="toggle" type="button" aria-expanded="false" aria-label="תפריט אודות השירות">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="submenu">
+          <li><a href="/aboutMe/contact/" aria-current="page">צור קשר</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <main class="form-wrap">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeoXiAgRKzsZaT7JXV3cn0G4LxD6H9R77mI90f0XDsjypLcdQ/viewform?embedded=true"
+            title="טופס בקשת שירות" loading="lazy">טוען…</iframe>
+    <p class="form-fallback">הטופס לא נטען? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoXiAgRKzsZaT7JXV3cn0G4LxD6H9R77mI90f0XDsjypLcdQ/viewform">פתח אותו בחלון נפרד</a></p>
+  </main>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>

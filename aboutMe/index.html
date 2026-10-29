@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="he">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Pc Ninja - אודות השירות</title>
+  <meta name="description" content="Help PC Ninja - שירותי תמיכה ופתרונות מחשוב לאנשים פרטיים ולעסקים">
+  <meta property="og:title" content="Help Pc Ninja - אודות השירות">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://help.pcninja.pro/aboutMe/">
+  <meta property="og:image" content="https://help.pcninja.pro/assets/ninja-laptop.jpg">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans:wght@400;600&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    body { background: var(--dark); }
+
+    /* Page title band (dark textured header) */
+    .page-head {
+      position: relative;
+      height: 340px;
+      display: grid;
+      place-items: center;
+      padding-top: var(--header-h);
+      background-color: #272727;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.07) 1.2px, transparent 1.4px),
+        radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.08), transparent 55%),
+        radial-gradient(ellipse at 75% 60%, rgba(255, 255, 255, 0.06), transparent 50%);
+      background-size: 6px 6px, 100% 100%, 100% 100%;
+      color: #fff;
+      text-align: center;
+    }
+    .page-head h1 {
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+    }
+    .page-head .bar { width: min(742px, 80vw); height: 10px; background: var(--bar); margin: 14px auto 0; }
+
+    .about {
+      display: grid;
+      grid-template-columns: 460px 1fr;
+      gap: 40px;
+      align-items: start;
+      max-width: 1216px;
+      margin: 0 auto;
+      padding: 24px 40px 40px 64px;
+      color: #fff;
+    }
+    .about img { width: 100%; height: auto; display: block; }
+    .about-text { text-align: center; direction: rtl; font-family: "Arvo", Arial, sans-serif; font-size: 24px; line-height: 1.38; }
+    .about-text .name {
+      display: inline-block;
+      margin: 8px 0 14px;
+      padding: 0 4px;
+      background: #351c75;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-style: italic;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+    .cta { text-align: center; padding: 8px 24px 32px; }
+    .cta .btn { width: min(564px, 100%); }
+    .links-title {
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      padding: 28px 24px;
+      direction: rtl;
+    }
+    @media (max-width: 900px) {
+      .about { grid-template-columns: 1fr; padding: 24px; }
+      .about img { max-width: 460px; margin: 0 auto; }
+      .about-text { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img src="/assets/logo.png" alt="" width="40" height="40">
+      <span>Help Pc Ninja</span>
+    </a>
+    <ul class="nav">
+      <li><a href="/">מחשבים - תמיכה מרחוק</a></li>
+      <li>
+        <a class="active" href="/aboutMe/" aria-current="page">אודות השירות</a>
+        <button class="toggle" type="button" aria-expanded="false" aria-label="תפריט אודות השירות">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="submenu">
+          <li><a href="/aboutMe/contact/">צור קשר</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div>
+        <h1>אודות השירות</h1>
+        <div class="bar"></div>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="/assets/ninja-laptop.jpg" alt="ninja fixing laptop (looking grumpy)" width="786" height="652">
+      <div class="about-text">
+        <span class="name" dir="ltr">Help PC Ninja</span>
+        <p>מספקת שירותי תמיכה ופתרונות מחשוב מגוונים לאנשים פרטיים ולעסקים הזקוקים למענה מקצועי, יסודי וממוקד פתרון.</p>
+        <p>הפעילות מתקיימת בעיקר ללא מטרת רווח, לצד ניהול מעגל לקוחות אקסקלוסיבי הזוכה לליווי אישי ולשירות המותאם לצרכיו.</p>
+        <p>לצורך טיפול יעיל, יש לצרף לפנייה תיאור ברור של הנושא, השפעתו ומידת הדחיפות. כל פנייה נבחנת ברצינות, תוך התמדה באיתור פתרון ושיקול דעת לגבי היקף הטיפול הנדרש.</p>
+        <p>הרווח אינו מטרת הפעילות, אך במקרים מסוימים השירות כרוך בתשלום המאפשר להקצות את הזמן והמשאבים הדרושים. שאלת העלות אינה צריכה להרתיע מפנייה ראשונית.</p>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a class="btn btn-outline" href="/aboutMe/contact/">צור קשר</a>
+    </div>
+
+    <hr class="divider">
+    <p class="links-title">קישורים נוספים :</p>
+    <hr class="divider">
+
+    <section class="downloads">
+      <a href="https://win11.pcninja.pro/">DOWNLOAD - CUSTOM WINDOWS INSTALLATION</a>
+      <a href="https://office.pcninja.pro/">DOWNLOAD - SMART OFFICE INSTALLER</a>
+    </section>
+  </main>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>

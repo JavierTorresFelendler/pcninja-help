@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="he">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Pc Ninja</title>
+  <meta name="description" content="תמיכה מרחוק במחשבים - Help Pc Ninja">
+  <meta property="og:title" content="Help Pc Ninja">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://help.pcninja.pro/">
+  <meta property="og:image" content="https://help.pcninja.pro/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    /* Hero: the big "help" button photo with a dark overlay */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 80px 24px 96px;
+      background: #636363 url("/assets/hero.jpg") center / cover no-repeat;
+      text-align: center;
+      color: #fff;
+    }
+    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.61); }
+    .hero-inner { position: relative; width: min(742px, 100%); }
+    .hero-cta {
+      font-family: Narkisim, "David", "Times New Roman", serif;
+      font-size: 80px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1.25;
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+    .hero-bar { height: 10px; background: var(--bar); margin: 18px 0 20px; }
+    .hero-powered { font-size: 17.33px; }
+    .hero-powered a { color: #fff; }
+    .scroll-hint {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .scroll-hint svg { width: 28px; height: 28px; }
+
+    .more-title {
+      background: var(--light);
+      padding: 34px 24px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 17.33px;
+      color: #212121;
+    }
+
+    /* Tool rows: banner image behind two buttons */
+    .tool {
+      position: relative;
+      height: 83px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .tool .btn { position: absolute; top: 50%; transform: translateY(-50%); }
+    .tool-ru { background-color: #fff; background-image: url("/assets/remoteutilities.png"); }
+    .tool-pv { background-color: #111; background-image: url("/assets/peerviewer.png"); }
+    .tool-hd { background-color: #3a3a3a; background-image: url("/assets/hoptodesk.jpg"); }
+    .tool-ru .site { left: 5.6%; }
+    .tool-ru .dl   { left: 74.4%; width: 20.6%; }
+    .tool-pv .site { left: 14.6%; }
+    .tool-pv .dl   { left: 66.6%; width: 13%; }
+    .tool-hd .site { left: 22.3%; }
+    .tool-hd .dl   { left: 58.9%; width: 13%; }
+
+    @media (max-width: 700px) {
+      .hero-cta { font-size: 52px; }
+      .tool { display: flex; align-items: center; justify-content: space-around; }
+      .tool .btn { position: static; transform: none; width: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar is-transparent" data-transparent>
+    <a class="brand" href="/">
+      <img src="/assets/logo.png" alt="" width="40" height="40">
+      <span>Help Pc Ninja</span>
+    </a>
+    <ul class="nav">
+      <li><a class="active" href="/" aria-current="page">מחשבים - תמיכה מרחוק</a></li>
+      <li>
+        <a href="/aboutMe/">אודות השירות</a>
+        <button class="toggle" type="button" aria-expanded="false" aria-label="תפריט אודות השירות">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="submenu">
+          <li><a href="/aboutMe/contact/">צור קשר</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <a class="hero-cta" dir="rtl" href="https://go.anyviewer.com/dl/AnyViewerSetup_x64.exe">לחץ לתמיכה מרחוק.</a>
+        <div class="hero-bar"></div>
+        <p class="hero-powered">Powered by <a href="https://www.anyviewer.com/">AnyViewer.</a></p>
+      </div>
+      <a class="scroll-hint" href="#more" aria-label="גלול למטה">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <section id="more" class="more-title rtl">אפשרויות תמיכה מרחוק נוספות</section>
+
+    <section class="tool tool-ru" aria-label="RemoteUtilities">
+      <a class="btn btn-light site" href="https://www.remoteutilities.com/">RemoteUtilities</a>
+      <a class="btn btn-light dl" href="https://ru.pcninja.pro">Custom Download</a>
+    </section>
+    <section class="tool tool-pv" aria-label="PeerViewer">
+      <a class="btn btn-ghost site" href="https://github.com/PeerViewer">PeerViewer</a>
+      <a class="btn btn-light dl" href="https://github.com/PeerViewer/codebase/releases/">Download</a>
+    </section>
+    <section class="tool tool-hd" aria-label="HopToDesk">
+      <a class="btn btn-ghost site" href="https://www.hoptodesk.com/">HopToDesk</a>
+      <a class="btn btn-light dl" href="https://download.hoptodesk.com/HopToDesk.exe">Download</a>
+    </section>
+
+    <section class="downloads">
+      <a href="https://win11.pcninja.pro/">DOWNLOAD - CUSTOM WINDOWS INSTALLATION</a>
+      <a href="https://office.pcninja.pro/">DOWNLOAD - SMART OFFICE INSTALLER</a>
+    </section>
+  </main>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
