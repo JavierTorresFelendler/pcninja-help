@@ -4,47 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Help Pc Ninja - אודות השירות</title>
-  <meta name="description" content="Help PC Ninja - שירותי תמיכה ופתרונות מחשוב לאנשים פרטיים ולעסקים">
+  <meta name="description" content="תמיכה מרחוק במחשבים: מורידים את AnyViewer, שולחים את מספר המכשיר, ואני מתחבר לעזור.">
   <meta property="og:title" content="Help Pc Ninja - אודות השירות">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://help.pcninja.pro/aboutMe/">
-  <meta property="og:image" content="https://help.pcninja.pro/assets/ninja-laptop.jpg">
+  <meta property="og:image" content="https://help.pcninja.pro/assets/ninja.png">
+  <link rel="canonical" href="https://help.pcninja.pro/aboutMe/">
+  <link rel="alternate" hreflang="he" href="https://help.pcninja.pro/aboutMe/">
+  <link rel="alternate" hreflang="en" href="https://help.pcninja.pro/en/about/">
+  <link rel="alternate" hreflang="es" href="https://help.pcninja.pro/es/about/">
+  <link rel="alternate" hreflang="x-default" href="https://help.pcninja.pro/aboutMe/">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
-  <style>
-    .page-head { background: var(--console); color: #fff; padding-block: 36px 40px; }
-    .page-head h1 { font-size: clamp(34px, 5vw, 48px); font-weight: 800; }
-    .about { display: grid; grid-template-columns: 1fr 400px; gap: 48px; align-items: start; }
-    .about-text { max-width: 34em; }
-    .about-text p + p { margin-top: 16px; }
-    .about-text .lead { font-size: 22px; font-weight: 600; }
-    .prep { margin-block: 28px; padding: 22px 24px; background: var(--card); border: 1px solid var(--rule); border-right: 4px solid var(--ninja); border-radius: 4px; }
-    .prep h2 { font-size: 20px; margin-bottom: 10px; }
-    .prep ul { list-style: none; display: grid; gap: 6px; }
-    .prep li { padding-right: 18px; position: relative; }
-    .prep li::before { content: ""; position: absolute; right: 0; top: 0.75em; width: 8px; height: 2px; background: var(--ninja); }
-    .prep p { margin-top: 12px; color: var(--muted); font-size: 16px; }
-    .about-text .btn { margin-top: 28px; }
-    .about figure img { width: 100%; height: auto; display: block; border-radius: 6px; }
-    @media (max-width: 860px) {
-      .about { grid-template-columns: 1fr; gap: 32px; }
-      .about figure { order: -1; max-width: 420px; }
-    }
-  </style>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap">
       <a class="brand" href="/"><img src="/assets/logo.png" alt="" width="40" height="40"><span>Help Pc Ninja</span></a>
-      <ul class="nav">
-        <li><a href="/">תמיכה מרחוק</a></li>
-        <li><a href="/aboutMe/" aria-current="page">אודות</a></li>
-        <li><a href="/aboutMe/contact/">צור קשר</a></li>
-      </ul>
+      <div class="menus">
+        <ul class="nav">
+          <li><a href="/">תמיכה מרחוק</a></li>
+          <li><a href="/aboutMe/" aria-current="page">אודות</a></li>
+          <li><a href="/aboutMe/contact/">צור קשר</a></li>
+        </ul>
+        <ul class="langs" aria-label="Language">
+          <li><a href="/aboutMe/" hreflang="he" lang="he" title="עברית" aria-current="true">עב</a></li>
+          <li><a href="/en/about/" hreflang="en" lang="en" title="English">EN</a></li>
+          <li><a href="/es/about/" hreflang="es" lang="es" title="Español">ES</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -59,7 +51,7 @@
 
           <div class="prep">
             <h2>כדי לטפל ביעילות, צרפו לפנייה:</h2>
-            <ul>
+            <ul class="dash-list">
               <li>תיאור ברור של הנושא</li>
               <li>איך הוא משפיע עליכם</li>
               <li>מידת הדחיפות</li>

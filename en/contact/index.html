@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Pc Ninja - Contact</title>
+  <meta name="description" content="Remote computer support: download AnyViewer, send me your device ID, and I'll connect to help.">
+  <meta property="og:title" content="Help Pc Ninja - Contact">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://help.pcninja.pro/en/contact/">
+  <meta property="og:image" content="https://help.pcninja.pro/assets/ninja.png">
+  <link rel="canonical" href="https://help.pcninja.pro/en/contact/">
+  <link rel="alternate" hreflang="he" href="https://help.pcninja.pro/aboutMe/contact/">
+  <link rel="alternate" hreflang="en" href="https://help.pcninja.pro/en/contact/">
+  <link rel="alternate" hreflang="es" href="https://help.pcninja.pro/es/contact/">
+  <link rel="alternate" hreflang="x-default" href="https://help.pcninja.pro/aboutMe/contact/">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="/en/"><img src="/assets/logo.png" alt="" width="40" height="40"><span>Help Pc Ninja</span></a>
+      <div class="menus">
+        <ul class="nav">
+          <li><a href="/en/">Remote support</a></li>
+          <li><a href="/en/about/">About</a></li>
+          <li><a href="/en/contact/" aria-current="page">Contact</a></li>
+        </ul>
+        <ul class="langs" aria-label="Language">
+          <li><a href="/aboutMe/contact/" hreflang="he" lang="he" title="עברית">עב</a></li>
+          <li><a href="/en/contact/" hreflang="en" lang="en" title="English" aria-current="true">EN</a></li>
+          <li><a href="/es/contact/" hreflang="es" lang="es" title="Español">ES</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head"><div class="wrap"><h1>Service request</h1><p>Leave your details and I'll get back to you.</p></div></div>
+
+    <section>
+      <div class="wrap contact">
+        <aside class="tips">
+          <h2>What to include</h2>
+          <ul class="dash-list">
+            <li>A clear description of the issue</li>
+            <li>How it affects you</li>
+            <li>How urgent it is</li>
+          </ul>
+          <p>Cost shouldn't stop you from getting in touch.</p>
+        </aside>
+
+        <form id="request-form" class="form-card" action="https://api.web3forms.com/submit" method="POST"
+              data-send="Send request" data-sending="Sending…" data-sent="Request sent. I'll get back to you soon." data-failed="The request wasn't sent. Check your internet connection and try again.">
+          <input type="hidden" name="access_key" value="2fe4508c-cd5f-4f0e-9826-55a80dd93fe1">
+          <input type="hidden" name="subject" value="New request from help.pcninja.pro (EN)">
+          <input type="hidden" name="from_name" value="Help Pc Ninja">
+          <input type="hidden" name="language" value="English">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" required autocomplete="name" maxlength="100">
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone <span class="opt">(optional)</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="30">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-email" name="email" type="email" required autocomplete="email" maxlength="120">
+            </div>
+            <div class="field">
+              <label for="f-urgency">Urgency <span class="req" aria-hidden="true">*</span></label>
+              <select id="f-urgency" name="urgency" required>
+                <option value="">Choose…</option>
+                <option value="Normal">Normal</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Critical">Critical</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-problem">What's the problem? <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-problem" name="problem" required maxlength="4000"></textarea>
+          </div>
+          <div class="field">
+            <label for="f-impact">How does it affect you? <span class="opt">(optional)</span></label>
+            <textarea id="f-impact" name="impact" maxlength="2000" style="min-height:90px"></textarea>
+          </div>
+
+          <p id="form-status" class="form-status" role="status" hidden></p>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <small>Fields marked * are required.</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Help Pc Ninja</span>
+      <ul>
+        <li><a href="https://www.pcninja.pro/">PcNinja home</a></li>
+        <li><a href="https://win11.pcninja.pro/">Windows installation</a></li>
+        <li><a href="https://office.pcninja.pro/">Office installation</a></li>
+        <li><a href="https://github.com/JavierTorresFelendler">My tools on GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="/assets/form.js"></script>
+</body>
+</html>
