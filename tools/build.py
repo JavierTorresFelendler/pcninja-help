@@ -42,7 +42,7 @@ LANGS = {
         "download": "הורדה", "site": "לאתר התוכנה",
         "more_title": "עוד הורדות",
         "win": ("התקנת Windows", "קבצי התקנה של Windows 11 ו־10 Pro."),
-        "office": ("התקנת Office", "Smart Office Installer, הגרסה האחרונה."),
+        "office": ("WinTool", "Windows Update, שדרוג Windows ו-Office באפליקציה אחת. הורדה ישירה של הגרסה האחרונה."),
         "about_h1": "אודות השירות",
         "about_lead": "Help PC Ninja מספקת שירותי תמיכה ופתרונות מחשוב מגוונים לאנשים פרטיים ולעסקים הזקוקים למענה מקצועי, יסודי וממוקד פתרון.",
         "about_p1": "הפעילות מתקיימת בעיקר ללא מטרת רווח, לצד ניהול מעגל לקוחות אקסקלוסיבי הזוכה לליווי אישי ולשירות המותאם לצרכיו.",
@@ -64,7 +64,7 @@ LANGS = {
         "f_failed": "הפנייה לא נשלחה. בדקו את החיבור לאינטרנט ונסו שוב.",
         "f_required": "שדות עם * הם חובה.",
         "f_subject": "פנייה חדשה מ-help.pcninja.pro",
-        "footer": ["PcNinja - דף הבית", "התקנת Windows", "התקנת Office", "הכלים שלי ב-GitHub"],
+        "footer": ["PcNinja - דף הבית", "התקנת Windows", "WinTool", "הכלים שלי ב-GitHub"],
     },
     "en": {
         "dir": "ltr", "label": "EN", "name": "English",
@@ -91,7 +91,7 @@ LANGS = {
         "download": "Download", "site": "Website",
         "more_title": "More downloads",
         "win": ("Windows installation", "Windows 11 and 10 Pro install images."),
-        "office": ("Office installation", "Smart Office Installer, latest version."),
+        "office": ("WinTool", "Windows Update, Windows Upgrade and Office in one app. Direct download of the latest version."),
         "about_h1": "About the service",
         "about_lead": "Help PC Ninja provides support and IT solutions for individuals and businesses that need a professional, thorough and solution-focused answer.",
         "about_p1": "The service runs mostly on a not-for-profit basis, alongside a small circle of clients who get personal, tailored support.",
@@ -113,7 +113,7 @@ LANGS = {
         "f_failed": "The request wasn't sent. Check your internet connection and try again.",
         "f_required": "Fields marked * are required.",
         "f_subject": "New request from help.pcninja.pro (EN)",
-        "footer": ["PcNinja home", "Windows installation", "Office installation", "My tools on GitHub"],
+        "footer": ["PcNinja home", "Windows installation", "WinTool", "My tools on GitHub"],
     },
     "es": {
         "dir": "ltr", "label": "ES", "name": "Español",
@@ -140,7 +140,7 @@ LANGS = {
         "download": "Descargar", "site": "Sitio web",
         "more_title": "Más descargas",
         "win": ("Instalación de Windows", "Imágenes de instalación de Windows 11 y 10 Pro."),
-        "office": ("Instalación de Office", "Smart Office Installer, última versión."),
+        "office": ("WinTool", "Windows Update, la actualización de Windows y Office en una sola app. Descarga directa de la última versión."),
         "about_h1": "Acerca del servicio",
         "about_lead": "Help PC Ninja ofrece soporte y soluciones informáticas a particulares y empresas que necesitan una respuesta profesional, minuciosa y enfocada en resolver.",
         "about_p1": "El servicio funciona principalmente sin fines de lucro, junto con un círculo reducido de clientes que reciben atención personal y adaptada.",
@@ -162,11 +162,11 @@ LANGS = {
         "f_failed": "La solicitud no se envió. Revisa tu conexión a internet e inténtalo de nuevo.",
         "f_required": "Los campos con * son obligatorios.",
         "f_subject": "Nueva solicitud desde help.pcninja.pro (ES)",
-        "footer": ["PcNinja inicio", "Instalación de Windows", "Instalación de Office", "Mis herramientas en GitHub"],
+        "footer": ["PcNinja inicio", "Instalación de Windows", "WinTool", "Mis herramientas en GitHub"],
     },
 }
 
-FOOTER_URLS = ["https://www.pcninja.pro/", "https://win11.pcninja.pro/", "https://office.pcninja.pro/", "https://github.com/JavierTorresFelendler"]
+FOOTER_URLS = ["https://www.pcninja.pro/", "https://win11.pcninja.pro/", "https://wintool.pcninja.pro/", "https://github.com/JavierTorresFelendler"]
 
 
 def head(lang, page, extra_og=""):
@@ -302,7 +302,7 @@ def home(lang):
         <h2 class="section-title">{L['more_title']}</h2>
         <div class="more">
           <a href="https://win11.pcninja.pro/"><strong>{L['win'][0]}</strong><span>{L['win'][1]}</span><span class="host"><bdi>win11.pcninja.pro</bdi></span></a>
-          <a href="https://office.pcninja.pro/"><strong>{L['office'][0]}</strong><span>{L['office'][1]}</span><span class="host"><bdi>office.pcninja.pro</bdi></span></a>
+          <a href="https://wintool.pcninja.pro/"><strong>{L['office'][0]}</strong><span>{L['office'][1]}</span><span class="host"><bdi>wintool.pcninja.pro</bdi></span></a>
         </div>
       </div>
     </section>
